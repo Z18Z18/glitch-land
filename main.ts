@@ -105,7 +105,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.hazardLava0, function (sp
     tiles.placeOnRandomTile(mySprite, tiles.util.arrow1)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.saplingPine, function (sprite, location) {
-    tiles.placeOnRandomTile(mySprite, assets.tile`myTile17`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile43`)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -172,9 +172,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile18`, function (sprite, 
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, location) {
     tiles.placeOnRandomTile(crystal_4, assets.tile`myTile21`)
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`tile1`, function (sprite, location) {
-    tiles.placeOnRandomTile(mySprite, sprites.dungeon.greenInnerNorthEast)
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
     tiles.placeOnRandomTile(crystal_3, assets.tile`myTile20`)
 })
@@ -236,6 +233,9 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     200,
     true
     )
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, location) {
+    tiles.placeOnRandomTile(mySprite, sprites.dungeon.greenInnerNorthEast)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile44`, function (sprite, location) {
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile43`)
@@ -312,7 +312,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile48`, function (sprite, 
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile42`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, location) {
-    tiles.placeOnRandomTile(mySprite, assets.tile`myTile17`)
+    tiles.placeOnRandomTile(mySprite, assets.tile`myTile77`)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile12`)
@@ -323,7 +323,7 @@ let crystal_3: Sprite = null
 let crystal_2: Sprite = null
 let crystal_1: Sprite = null
 let mySprite: Sprite = null
-game.splash("(glitch land)")
+game.splash("(glitch land)", "0.1")
 mySprite = sprites.create(img`
     ........................
     .....ffff...............
